@@ -11,9 +11,9 @@
 
 ## Study materials
 
-- [Apple - Terminal User Guide](https://support.apple.com/guide/terminal/welcome/mac)
-- [SS64 = macOS Commands Reference](https://ss64.com/osx/)
-- [zsh vs bash quick comparison](https://linuxhandbook.com/zsh-vs-bash/)
+- [ ] [Apple - Terminal User Guide](https://support.apple.com/guide/terminal/welcome/mac)
+- [ ] [SS64 = macOS Commands Reference](https://ss64.com/osx/)
+- [ ] [zsh vs bash quick comparison](https://codeparrot.ai/blogs/zsh-vs-bash-key-differences-features-and-which-one-to-choose)
 
 ---
 
@@ -22,36 +22,38 @@
 ### Navigation & File Operations
 
   - **Basic**
-- [ ] Open Terminal from Spotlight or Launchpad.
-- [ ] Navigate to your home folder: `cd ~`.
-- [ ] List all files (including hidden): `ls -la`.
-- [ ] Create a folder named `terminal_practice`: `mkdir terminal_practice`.
-- [ ] Create a file inside: `touch terminal_practice/test.txt`.
-- [ ] Move and rename the file:
-      `mv teterminal_practice/teste.txt terminal_practice/teste1.txt`
-- [ ] Remove the file and directory:
+- [x] Open Terminal from Spotlight or Launchpad.
+- [x] Navigate to your home folder: `cd ~`.
+- [x] List all files (including hidden): `ls -la`.
+- [x] Create a folder named `terminal_practice`: `mkdir terminal_practice`.
+- [x] Create a file inside: `touch terminal_practice/test.txt`.
+- [x] Move and rename the file:
+      `mv terminal_practice/teste.txt terminal_practice/teste1.txt`
+- [x] Remove the file and directory:
       `rm terminal_practice/teste1.txt`
       `rmdir terminal_practice`
 
   - **Search files**
-- [ ] Create a test folder structure with `.txt` and `.log` files.
-- [ ] Use `find` to localize files by name:
+- [x] Create a test folder structure with `.txt` and `.log` files.
+- [x] Use `find` to localize files by name:
       `find ~/Documents -name "*.log"`
-- [ ] Use `grep` to search for words inside those files:
+- [x] Use `grep` to search for words inside those files:
       `grep -i "error" ~/Documents/logs/*.log`
+- [x] Remove the entire directory
+      `rm -r terminal_test`
 
-  - **File monipulation**
-- [ ] Create a `.txt` with multiple text lines.
-- [ ] Use `cat`, `less`, `head`, `tail` and `wc` to analyze it.
+  - **File manipulation**
+- [x] Create a `.txt` with multiple text lines.
+- [x] Use `cat`, `less`, `head`, `tail` and `wc` to analyze it.
       `head -n 5 notes.txt`
       `tail -n 3 notes.txt`
       `wc -l notes.txt`
 
   - **Redirection and Pipe**
-- [ ] Create an artificial logs with `echo` and redirection:
-      `echo "Fake error log: $(date) >> test.log`
-- [ ] Use `cat`, `grep`, `cut` and `sort` together:
-      `cat test.log | grep "error" | cut -d ":" -f2 | sort
+- [x] Create an artificial logs with `echo` and redirection:
+      `echo "Fake error log: $(date)" >> test.log`
+- [x] Use `cat`, `grep`, `cut` and `sort` together:
+      `cat test.log | grep "error" | cut -d ":" -f2 | sort`
 
   - **Basic scripting**
 - [ ] Let's make a very basic monitoring.sh to analyze our system!
@@ -64,17 +66,18 @@
 
 ### Privilege escalation
 
-- [ ] Run `whoami` and `id`.
-- [ ] Try `sudo ls /var/root`.
+- [x] Run `whoami` and `id`.
+- [x] Try `sudo ls /var/root`.
       *(Note any password prompt behaviour)*
-- [ ] Create a folder in `/User/Shared` using `sudo mkdir /Users/Shared/test_terminal`.
+- [x] Create a folder in `/User/Shared` using `sudo mkdir /Users/Shared/test_terminal`.
 
 ### System Info Commands
 
-- [ ] `sw_vers` - OS version
-- [ ] `uname -a` - kernel & system info
-- [ ] `uptime` - how long the Mac has been on
-- [ ] `system_profiler SPSoftwareDataType` - general software info
+- [x] `sw_vers` - OS version
+- [x] `uname -a` - kernel & system info
+      wtf is `Darwin`?
+- [x] `uptime` - how long the Mac has been on
+- [x] `system_profiler SPSoftwareDataType` - general software info
 
 ---
 
@@ -93,5 +96,10 @@
 ### Common questions
 
 - How does macOS handle PATHs differently for user vs root shells?
+  - macOS treats the `PATHs` differently between standard users and root for security and previsibility reasons.
+    For regular users, the `PATH` is mounted based in various files, like: `/etc/paths`, `/etc/paths.d/*`.
+    For sudo users, it's restricted: `/usr/bin:/bin:/usr/sbin:/sbin`. It avoids malicious commands with high priviledge in `/usr/local/bin` or in `~/bin`.
 - Where are `zsh` customizations stored (`~/.zshrc`)? Are they auto-loaded?
+  - If interactive, it is! We also built ours, its the .zshrc file in the root of this repo.
 - Why is `root` locked by default in macOS?
+  - Guess what... Security! It avoid malicious direct logins as root. The user exists, it's just kept with the password unenabled (`!` in `/etc/master.passwd`), being able to work only when necessary.
