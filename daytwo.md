@@ -11,9 +11,9 @@
 
 ## Study materials
 
-- [ ] [Apple - Terminal User Guide](https://support.apple.com/guide/terminal/welcome/mac)
-- [ ] [SS64 = macOS Commands Reference](https://ss64.com/osx/)
-- [ ] [zsh vs bash quick comparison](https://codeparrot.ai/blogs/zsh-vs-bash-key-differences-features-and-which-one-to-choose)
+- [x] [Apple - Terminal User Guide](https://support.apple.com/guide/terminal/welcome/mac)
+- [x] [SS64 = macOS Commands Reference](https://ss64.com/osx/)
+- [x] [zsh vs bash quick comparison](https://codeparrot.ai/blogs/zsh-vs-bash-key-differences-features-and-which-one-to-choose)
 
 ---
 
