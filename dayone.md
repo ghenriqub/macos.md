@@ -11,8 +11,8 @@
 
 ## Study links
 
-- [Apple - support](https://support.apple.com/mac)
-- [Keyboard Shortcuts](https://support.apple.com/en-us/HT201236)
+- [x] [Apple - support](https://support.apple.com/mac)
+- [x] [Keyboard Shortcuts](https://support.apple.com/en-us/HT201236)
 
 ---
 
@@ -27,23 +27,23 @@
 
 ### Interface Exploration
 
-- [ ] Customize the Dock (add/remove/reorder apps).
-- [ ] Open Finder and:
+- [x] Customize the Dock (add/remove/reorder apps).
+- [x] Open Finder and:
   - Show sidebar
   - Show hidden files: `Cmd + Shift + .`
-- [ ] Create a new Desktop Space with **Mission Control**.
-- [ ] Use Launchpad to open apps.     
+- [x] Create a new Desktop Space with **Mission Control**.
+- [x] Use Launchpad to open apps.     
 
 ### System Settings / Settings
 
-- [ ] Change the desktop wallpaper.
-- [ ] Enable or disable "auto-hide Dock".
-- [ ] Enable **Dark Mode**
-- [ ] Log out using `Cmd + Shift + Q`, then log back in.
+- [x] Change the desktop wallpaper.
+- [x] Enable or disable "auto-hide Dock".
+- [x] Enable **Dark Mode**
+- [x] Log out using `Cmd + Shift + Q`, then log back in.
 
 ### Spotlight Search
 
-- [ ] Use `Cmd + Space` to:
+- [x] Use `Cmd + Space` to:
   - Launch an app (Terminal).
   - Search for system settings.
   - Find a file in your home directory.
