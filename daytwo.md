@@ -56,13 +56,13 @@
       `cat test.log | grep "error" | cut -d ":" -f2 | sort`
 
   - **Basic scripting**
-- [ ] Let's make a very basic monitoring.sh to analyze our system!
+- [x] Let's make a **monitoring.zsh** to analyze our system with a security focus!
       `#!/bin/zsh`
-      `echo "Hello, $USER! Today is $(date)."`
+      `# macOS Monitoring Report`
       `...`
-- [ ] Make it executable:
-      `chmod +x monitoring.sh`
-      `./monitoring.sh`
+- [x] Make it executable:
+      `chmod +x monitoring.zsh`
+      `./monitoring.zsh`
 
 ### Privilege escalation
 
