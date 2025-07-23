@@ -91,8 +91,6 @@
 - `man` pages are available for almost everything.
   - Try: `man sw_vers`, `man mkdir`, `man sudo`.
 
----
-
 ### Common questions
 
 - How does macOS handle PATHs differently for user vs root shells?
@@ -103,3 +101,5 @@
   - If interactive, it is! We also built ours, its the .zshrc file in the root of this repo.
 - Why is `root` locked by default in macOS?
   - Guess what... Security! It avoid malicious direct logins as root. The user exists, it's just kept with the password unenabled (`!` in `/etc/master.passwd`), being able to work only when necessary.
+
+---
