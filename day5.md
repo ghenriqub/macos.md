@@ -10,8 +10,8 @@
 
 ## Study materials
 
-- [ ] [Apple - `networksetup` Command Manual]()
-- [ ] [Apple - `pmset` Manual Page]()
+- [x] [Apple - `networksetup` Command Manual](https://ss64.com/osx/networksetup.html)
+- [x] [Apple - `pmset` Manual Page](https://ss64.com/osx/pmset.html)
 
 ---
 
@@ -19,33 +19,33 @@
 
 ### Network Management
 
-- [ ] List all hardware ports (including Wi-Fi and Ethernet)
+- [x] List all hardware ports (including Wi-Fi and Ethernet)
   - `networksetup -listallhardwareports
-- [ ] Get current IP address of Wi-Fi interface (`en0`)
+- [x] Get current IP address of Wi-Fi interface (`en0`)
   - `ipconfig getifaddr en0`
-- [ ] Get DNS servers for active service
+- [x] Get DNS servers for active service
   - `networksetup -getdnsservers Wi-Fi
-- [ ] Get current network location
+- [x] Get current network location
   - `scselect`
-- [ ] Create a new network location manually
+- [x] Create a new network location manually
   - Open **System Preferences > Network > Location > Edit Locations**
   - Add a new location (e.g., `TestLocation`) and apply changes
-- [ ] Switch between locations
+- [x] Switch between locations
   - From GUI: **Apple menu > System preferences > Network > Location**
   - From Terminal:
     - `scselect TestLocation`
 
 ### Power Management
 
-- [ ] View current power settings
+- [x] View current power settings
   - `pmset -g`
-- [ ] View battery status
+- [x] View battery status
   - `pmset -g batt`
-- [ ] View scheduled power events
+- [x] View scheduled power events
   - `pmset -g sched`
-- [ ] Set display sleep time (e.g. 5 minutes on battery)
+- [x] Set display sleep time (e.g. 5 minutes on battery)
   - `sudo pmset -b displaysleep 5`
-- [ ] Restore default settings
+- [x] Restore default settings
   - sudo pmset restoredefaults
 
 ---
