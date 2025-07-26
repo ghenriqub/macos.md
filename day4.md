@@ -69,6 +69,4 @@
 - How can I see what is outdated?
   - Just check with `brew outdated`.
 
- ---
-
 ---
