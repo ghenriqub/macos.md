@@ -4,7 +4,7 @@ This repository documents my daily hands-on practice and notes as I prepare for 
 
 ---
 
-## 🧭 Goals
+## Goals
 
 - Build confidence navigating and configuring macOS systems.
 - Practice using GUI and CLI tools for user support.
@@ -13,7 +13,7 @@ This repository documents my daily hands-on practice and notes as I prepare for 
 
 ---
 
-## 📆 Daily Logs
+## Daily Logs
 
 Each file represents a focused, self-contained study/practice session.
 
@@ -31,7 +31,7 @@ More days coming soon...
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 
 To reproduce the exercises:
 
@@ -42,7 +42,7 @@ To reproduce the exercises:
 
 ---
 
-## ⚙️ Project Structure
+## Project Structure
 
 .
 ├── day1.md
@@ -67,7 +67,7 @@ It is not affiliated with Apple Inc. or any MDM vendor.
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 ghenriqub — Software Engineering Student  
 Interested in infrastructure, security, and low-level systems.
