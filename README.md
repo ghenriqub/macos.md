@@ -44,13 +44,12 @@ To reproduce the exercises:
 
 ## Project Structure
 
-.
-├── day1.md
-├── day2.md
-├── day3.md
-├── ...
-└── macos.md <- Master checklist / topic index
-
+- .
+- ├── day1.md
+- ├── day2.md
+- ├── day3.md
+- ├── ...
+- └── macos.md <- Master checklist / topic index
 
 - Each `dayX.md` file contains:
   - Objectives
