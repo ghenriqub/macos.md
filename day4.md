@@ -10,8 +10,8 @@
 
 ## Study materials
 
-- [ ] [Homebrew - Official Site](https://brew.sh/)
-- [ ] [Homebrew - Manpage](https://docs.brew.sh/Manpage)
+- [x] [Homebrew - Official Site](https://brew.sh/)
+- [x] [Homebrew - Manpage](https://docs.brew.sh/Manpage)
 
 ---
 
